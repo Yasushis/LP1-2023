@@ -1,23 +1,23 @@
 import java.util.Arrays;
 
-public class tic_tac_toe {
+public class tictactoe {
 
     public static void main(String[] args) {
-        char[][] board = new char[5][5];
+        char[][] board = new char[3][3];
 
-        for(int i = 0; i < board.length; i++) {
-            Arrays.fill(board[i], '|');
+        for(int i = 0; i < 3; i++) {
+            Arrays.fill(board[i], ' ');
         }
 
         //while (!win(board) || !old(board)) {
-            showBoard(board);
+        showBoard(board);
         //}
     }
 
 
     public static void showBoard(char[][] board) {
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
                 System.out.print(board[i][j]);
             }
             System.out.println();
